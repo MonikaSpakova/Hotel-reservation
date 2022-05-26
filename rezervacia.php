@@ -199,32 +199,6 @@ $osoby = '';
 </div>
 <?php
 
-
-// email
-//$komu = '';
-//$od = '';
-//$predmet =  '';
-//$komp = '';
-
-//$komu = $email;
-//$od = 'monicenka3@gmail.com';
-//$predmet = 'Rezervácia izby v hoteli Magnólia';
-//$komp = 'From: ' . $od . "\r\n" . 'Reply-To: ' . $od . "\r\n" . 'Return-Path: ' . $od . "\r\n" . 'X-Mailer: PHP/' . phpversion() . "\r\n" . 'MIME-Version: 1.0' . "\r\n" . 'Content-Type: text/html; charset=UTF-8' . "\r\n";
-//$text = '';
-//$text = 'ahoj skuska';
-//ob_start();
-	//include 'hotel_email.php';
-	//$email_template = ob_get_clean();
-
-//if (mail($komu, $predmet, $text)) {
-	// Success
-    //$show = 1;
-	//$responses[] = 'Thank you for your reservation!';		
-//} else {
-    //$show = 4;
-	// Fail; problem with the mail server...
-	//$responses[] = 'Message could not be sent! Please check your mail server settings!';
-//}
 ?>
 </body>
 </html>
