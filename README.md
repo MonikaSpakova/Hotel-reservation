@@ -1,0 +1,3 @@
+### Hotel reservation system
+
+The hotel page includes the possibility to log in as a guest and as an admin. Depending on the settings, interaction is possible within the page. The hotel databases are created using MySQL. It is possible to book a specific room from the list on the page. As an admin, it is possible to register new rooms into the hotel system. In these settings, it is also possible to display a list of rooms, and after clicking on a specific room, a calendar with occupancy in the given month will be displayed. There is also a possibility to create a PDF in the calendar after clicking on the given reservation. The last page summarizes information about the hotel - the number of all rooms and the occupancy of the hotel in the current month.
