@@ -1,0 +1,484 @@
+/* CSS pre hlavičku stránky */ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    padding: 0;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    text-align: left;
+    background-color:lightpink;
+    padding: 1.3em;
+    border-radius: 15px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 4em;
+    padding-top: 0.4em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: snow;
+}
+
+/* CSS pre hlavnú stránku -index.php- */
+.uvod_slovo{
+    width: 50em;
+    padding: 1em;
+    margin-top: 8em;
+    margin-left: 35em;
+    background-color: #eee;
+    text-align: center;
+    line-height: 2;
+    border-radius: 15px;
+}
+
+.uvod_slovo h1{
+    color:lightpink;
+}
+
+.uvod_obrazky {
+    margin: 2em;
+    padding-left: 15em;
+    display: flex;
+    align-items: center;
+}
+
+.stlpce_obrazky {
+    flex: 10em;
+}
+
+.stlpce_obrazky img {
+    width: 38em;
+    height: 28em;
+}
+
+/* CSS pre stránku -registracia.php- */
+.form_registr {
+    box-sizing: border-box;
+    background-color: #eee;
+    width: 60em;
+    line-height: 2.5;
+    margin: 10em 0 0 30em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+}
+
+.form_registr h1 {
+    margin: 0 0 1em 0;
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 1.9em;
+    border-bottom: 1px solid #eceff2;
+    color: #000000;
+    font-weight: 600;
+    background-color: #f9fbfc;
+}
+
+.form_registr h1 i {
+    padding-right: 0.5em;
+    font-size: 1em;
+    color: #000000;
+}
+
+.form_registr input[type="number"] {
+    -moz-appearance: textfield;
+    width: 44em;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 0.3px;
+    resize: vertical;  
+}
+
+.form_registr input[type="number"]::-webkit-outer-spin-button,
+.form_registr input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form_registr label {
+    padding: 1.3em 0 0 1.5em;
+    display: inline-block;
+    color: #8e939b;
+}
+
+.form_registr input[type="submit"] {
+    display: block;
+    margin: 1em 0 0 30em;
+    padding: 1em;
+    border: 0;
+    background-color: lightpink;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    width: 30em;
+}
+.form_registr input[type="submit"]:hover {
+    background-color: rgb(255, 117, 138);
+  }
+
+.pevne_registr {
+    float: left;
+    width: 13em;
+    font-weight: bold;
+}
+
+.dopln_registr {
+    float: left;
+    margin-top: 0.6em;
+}
+
+.riadok_registr:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* CSS pre stránku -rezervacia.php- */
+.form_rezerv {
+    box-sizing: border-box;
+    background-color: #eee;
+    width: 60em;
+    margin: 8em auto 5em 30em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+}
+
+.form_rezerv input,textarea {
+    outline: 0;
+}
+
+.form_rezerv h1 {
+    margin: 0;
+    padding: 1em 0 1em 0;
+    font-size: 1.9em;
+    text-align: center;
+    border-bottom: 1px solid #eceff2;
+    color: #000000;
+    font-weight: 600;
+    background-color: #f9fbfc;
+}
+.form_rezerv h1 i {
+    padding-right: 0.5em;
+    font-size: 1em;
+}
+
+.riadok_rezerv {
+    display: inline-flex;
+    position: relative;
+    padding: 2em 0 0 1em;
+    width: 65em;
+}
+
+.form_rezerv input[type="text"], 
+.form_rezerv input[type="email"],
+.form_rezerv input[type="date"],
+.form_rezerv input[type="tel"],
+.form_rezerv input[type="number"] {
+    display: flex;
+    padding: 1.5em;
+    width: 19em;
+    height: 3em;
+    flex-basis: 5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form_rezerv select{
+    display: flex;
+    padding-left: 2.2em;
+    width: 19em;
+    height: 3em;
+    flex-basis: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form_rezerv input[type="text"]::placeholder, 
+.form_rezerv input[type="email"]::placeholder, 
+.form_rezerv input[type="tel"]::placeholder, 
+.form_rezerv input[type="date"]:invalid, 
+.form_rezerv input[type="number"]::placeholder, 
+.form_rezerv textarea::placeholder {
+    padding-left: 0.5em;
+    color: #8e939b;
+}
+
+.form_rezerv input[type="submit"] {
+    display: block;
+    margin: 2em 0 0 30em;
+    padding: 1em;
+    border: 0;
+    background-color: lightpink;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    width: 30em;
+}
+.form_rezerv input[type="submit"]:hover {
+    background-color: rgb(255, 117, 138);
+}
+
+.pevne_rezerv {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e939b;
+    padding: 1em 0 0 1em;  /*top right bottom left*/
+    float: left;
+    width: 9em;
+}
+
+.form_rezerv .dopln_rezerv {
+    float: left;
+    width: 22em;
+}
+
+.dopln_rezerv i {
+    position: absolute;
+    color: #dfe2e5;
+    padding: 1em 0 0 1em;
+}
+
+.dopln_rezerv i ~ input {
+    padding-left: 2.5em !important;
+}
+
+.responses {
+    padding: 15px;
+    margin: 0;
+}
+
+.dopln_rezerv .pevne_rezerv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dopln_rezerv .pevne_rezerv .posun {
+    width: 2em;
+}
+
+/* CSS pre stránku -rezervacia.php- */
+.display {
+    margin-top: 10em;
+}
+
+.navigator {
+    margin-top: 10em;
+    text-align: center;
+}
+
+/* CSS pre stránku -z_izby.php- */
+.Medzera {
+    display: block;
+    position: absolute;
+    margin: 100em;
+}
+
+.table {
+    text-align: center;
+}
+
+.dataTables_wrapper {
+    margin: 10em 20em 0 5em; /*top right bottom left*/
+}
+
+.M_s {
+    background: none;
+    border-width: 0em;
+}
+
+/* kalendar 
+.kalend {
+    margin-top: 10em;
+}
+
+.kalend table  {
+    border:1px solid #aaa;
+    border-collapse:collapse;
+    background-color:#fff;
+    font-family: Verdana;
+    font-size:12px;
+    
+}
+
+.kalend th {
+    background-color:#777;
+    color:#fff;
+    height:32px;
+    text-align: center;
+}
+
+.kalend td {
+    border:1px solid #ccc;
+    height:32px;
+    width:32px;
+    text-align:center;
+}
+
+.kalend td.red {
+    color:red;
+}
+
+.kalend td.bg-yellow {
+    background-color:#ffffe0;
+}
+
+.kalend td.bg-orange {
+    background-color:#ffa500;
+}
+
+.kalend td.bg-green {
+    background-color:#90ee90;
+}
+
+.kalend td.bg-white {
+    background-color:#fff;
+}
+
+.kalend td.bg-blue {
+    background-color:#add8e6;
+}
+
+.kalend a {
+    color: #333;
+    text-decoration:none;
+}
+
+.dni {
+    background-color: rgb(243, 174, 208);
+}*/
+
+/* kal */
+.vyber_izba {
+    display: inline-flex;
+    position: relative;
+    padding: 6.5em 0 0 1em;
+    width: 90em;
+}
+
+.dopln_kal .pevne_kal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pevne_kal {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 800;
+    color: black;
+    padding: 1em 0 0 1em;  /*top right bottom left*/
+    margin-left: 27em;
+    float: left;
+    width: 20em;
+}
+
+.dopln_kal {
+    float: left;
+    width: 20em;
+    margin: 2em 0 0 0;
+}
+
+.sub_dost {
+    margin: 1.4em 0 0 0 ;
+    width: 30em;
+    padding: 0.7em;
+    height: 3em;
+    background-color: lightpink;
+}
+
+/* PDF */
+.riadok_f {
+    display: inline-flex;
+    position: relative;
+    padding: 2em 0 0 1em;
+    width: 65em;
+}
+
+.pevne_f {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    color: #8e939b;
+    padding: 1em 0 0 1em;  /*top right bottom left*/
+    float: left;
+    width: 15em;
+}
+
+.dopln_f {
+    float: left;
+    width: 20em;
+    margin: 1.8em 0 0 0;
+    font-size: 18px;
+}
+
+.f_text {
+    color: black;
+}
+
+/* Prihlasenie */
+.form-group {
+    margin: 7em 0 0 45em;
+}
+
+.riadok {
+    margin-bottom: 2em;
+}
+
+.vstup {
+    width: 20em;
+    height: 3em;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.pevne {
+    margin-left: 0.7em;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tlacidlo {
+    margin-left: 1.4em;
+}
+
+/* informacie */
+.i_text {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.pevne_i {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    color: #8e939b;
+    padding: 1em 0 0 1em;  /*top right bottom left*/
+    float: left;
+    width: 30em;
+}
+
+.dopln_i {
+    float: left;
+    width: 20em;
+    margin: 1.5em 0 0 0;
+    font-size: 18px;
+}
